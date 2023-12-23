@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mea+Culpa&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+:root{
+    --primary-color:#edf2fc;
+    --second-color:#212121;
+
+    
+}
+.dark-theme{
+    --primary-color:black;
+    --second-color:#eee4e4;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background:var(--primary-color);
+    font-family: sans-serif;
+    position: relative;
+}
+nav{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav p{
+    font-family: 'Mea Culpa', cursive;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin:0.1rem 0 0 1rem;
+    padding: 0.7rem;
+    letter-spacing: 0.1rem;
+    color: var(--second-color);
+    cursor: pointer;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:var(--second-color);
+    font-weight: bolder;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color:#f75b5b;
+}
+.info{
+    margin-left: 8%;
+    margin-top:15%;
+}
+.info h1{
+    font-size: 70px;
+    color: var(--second-color);
+    margin-bottom: 20px;
+}
+.info h1 span{
+    color: #e01c1c;
+}
+.info p{
+    color: var(--second-color);
+    line-height: 22px;
+}
+.info a{
+    background: var(--second-color);
+    padding: 10px 18px;
+    text-decoration: none;
+    color: var(--primary-color);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 20px;
+}
+.img-box{
+    width:45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+}
+.img-box img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.img-box .back-img{
+    width: 70%;
+}
+.img-box:hover .back-img{
+    bottom: 40px;
+}
+.img-box:hover .main-img{
+    left: 54%;
+}
+
+#icon{
+    width:30px;
+    cursor: pointer;
+}

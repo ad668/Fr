@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Home.css"/>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <p>Aditya</p>
+            <ul>
+                <li> <a href="">Home</a></li>
+                <li> <a href="">About</a></li>
+                <li> <a href="">Portfolio</a></li>
+                <li> <a href="">Project</a></li>
+                <li> <a href="">Hire Me</a></li>
+            </ul>
+            <img src="moon.png" id="icon">
+        </nav>
+        <div class="info">
+            <h1>I'am <span>Aditya</span> Kumar</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis 
+                in facere, itaque error<br> quo excepturi quas sunt aliquid quaerat amet?</p>
+                <a href="">Download CV</a>
+        </div>
+        <div class="img-box">
+            <img src="pattern2.png" class="back-img">
+            <img src="AD1.png" class="main-img">
+        </div>
+    </div>
+    
+    <script>
+
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src="sun.png";
+            }else{
+                icon.src="moon.png";
+            }
+        }
+    </script>
+</body>
+</html>
